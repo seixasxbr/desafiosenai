@@ -9,6 +9,7 @@ um sensor de luz.
 #### Controlador
 O controlador utilizado para levar o robô da região de início para a região de chegada é baseado em uma máquina de estados e tem a função de fazer com que o robô se desloque pela sua trajetória evitando colidir com objetos em sua direção. Para isso ele utiliza os 8 sensores frontais. As informações sensoriais são processadas para calcular duas variáveis, uma referente aos sensores voltados para esquerda (wheel_weight_total[0]) e uma para os sensores voltados para a direita (wheel_weight_total[1]), que são resultado da soma das informações referentes a cada sensor ponderadas pela sua posição (sensores mais voltados para a frente do robô tem mais peso). Essas variáveis servem para avaliar a proximidadade dos obstáculos com a trajetória do robô e fazer com que o robô decida seu estado.
 
+# ![image](https://github.com/seixasxbr/desafiosenai/blob/main/MACHINE.PNG)
 Ele se inicia no estado FOWARD, em que ele está andando com determinada velocidade para a frente. Se o sensor de luz detectar um sinal acima de um limite, constatando a proximidade da fonte de luz e sua chegada ao objetivo, ele começa a frear e entra no estado de PARA.
 Se ele encontrar um objeto na sua trajetória a sua esquerda, detectado quando wheel_weight_total[0] estiver acima de um limite, ele começa a girar no sentido horário e entra no estado LEFT. Caso encontre um objeto a sua direita, detectado quando wheel_weight_total[1] estiver acima de um limite, ele começa a rodar no sentido anti-horário e entra no estado LEFT. 
 
