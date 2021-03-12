@@ -19,4 +19,4 @@ No estado LEFT ele continua rodando no sentido anti-horário até encontrar um t
 No estado de PARA ele continua freando até parar completamente. Se ele voltar a não detectar a presença da fonte de luz com o sensor de luz ele volta pro estado de FOWARD.
 
 
-### É necessário iniciar o controlador no world que está neste repositório, pois conta com o acréscimo do sensor de luz.
+##### É necessário iniciar o controlador no world que está neste repositório, pois conta com o acréscimo do sensor de luz.
