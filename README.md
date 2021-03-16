@@ -22,4 +22,4 @@ No estado de PARA ele continua freando até parar completamente. Se ele voltar a
 #### Resultado
 O robô conseguiu alcançar o seu objetivo em 1 minuto e 4 segundos, como mostrado no vídeo contído nesse repositório.
 
-##### OBS : É necessário iniciar o controlador no world que está neste repositório, pois é necessária adicionar o sensor de luz.
+##### OBS : É necessário iniciar o controlador no world que está neste repositório, pois é necessário adicionar o sensor de luz.
